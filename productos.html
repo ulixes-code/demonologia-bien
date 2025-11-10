@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos y Servicios - Demonología Antigua</title>
+  <style>
+    body {
+      background-color: #0c0c0c;
+      color: #f5f5f5;
+      font-family: "Cinzel", serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      box-shadow: 0 0 15px crimson;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: crimson;
+    }
+
+    .intro {
+      margin: 40px auto;
+      max-width: 800px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    /* 🔥 Estilo compartido para demonios y servicios */
+    .demonio,
+    .servicios {
+      background-color: #181818;
+      border: 2px solid crimson;
+      border-radius: 12px;
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px #8b0000;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .demonio:hover,
+    .servicios:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px crimson;
+    }
+
+    .demonio img,
+    .servicios img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      padding: 15px;
+      color: #aaa;
+      margin-top: 40px;
+      box-shadow: 0 -5px 15px crimson;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Productos y Servicios</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="jerarquia.html">jerarquia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>Artefactos del Inframundo</h2>
+    <p>Descubre objetos y servicios únicos para los estudiosos del ocultismo.</p>
+  </section>
+
+  <section class="galeria">
+    <div class="demonio">
+      <img src="https://i.etsystatic.com/42159249/r/il/9a3d6b/6644537406/il_fullxfull.6644537406_jj79.jpg" alt="Peluche de Lucifer">
+      <h3>Peluche de Lucifer</h3>
+      <p>Osito de color negro con alas oscuras. <br>Precio: <strong>$300 MXN</strong></p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://i.etsystatic.com/20186148/r/il/abc766/3012775052/il_570xN.3012775052_o3el.jpg" alt="Amuleto de Satán">
+      <h3>Amuleto de Satán</h3>
+      <p>Protege contra energías malignas y atrae el poder infernal. <br>Precio: <strong>$450 MXN</strong></p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://i.etsystatic.com/24934393/r/il/3ced1a/5840910378/il_570xN.5840910378_imra.jpg" alt="Cabeza decorativa">
+      <h3>Cabeza de cerdo decorativa</h3>
+      <p>Genial para usarla como adorno de pared o mesa. <br>Precio: <strong>$650 MXN</strong></p>
+    </div>
+
+    <div class="servicios">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__26zd2q2_B3nuaSktHGtI_Dzk1LKyV3SHw&s" alt="amarres">
+      <h3> Amarre</h3>
+      <p>Ideal para atraer a esa persona especial. <br>Precio: <strong>$2000 MXN</strong></p>
+    </div>
+
+    <div class="servicios">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlRFsOgmQmyUaaS8-L1aNY3gSmPArBCi5E0Q&s" alt="misas">
+      <h3>Ritos y homenajes</h3>
+      <p>Perfecto para enmarcar tu fe y rendir tributo. <br>Precio: <strong>Gratis</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Enciclopedia Infernal | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

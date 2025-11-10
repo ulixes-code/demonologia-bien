@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerarquía Infernal - Demonología Antigua</title>
+  <style>
+    body {
+      background-color: #0c0c0c;
+      color: #f5f5f5;
+      font-family: "Cinzel", serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* 🌫️ EFECTO DE HUMO FLOTANTE REALISTA */
+    .humo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .humo div {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 70%);
+      border-radius: 50%;
+      opacity: 0.25;
+      animation: flotar 40s linear infinite;
+      mix-blend-mode: screen;
+    }
+
+    /* Movimiento suave, cruzado y en distintas velocidades */
+    @keyframes flotar {
+      0% {
+        transform: translate(0, 100vh) scale(1);
+        opacity: 0.1;
+      }
+      25% {
+        transform: translate(50vw, 60vh) scale(1.3);
+        opacity: 0.3;
+      }
+      50% {
+        transform: translate(-20vw, 30vh) scale(1.5);
+        opacity: 0.4;
+      }
+      75% {
+        transform: translate(30vw, -10vh) scale(1.7);
+        opacity: 0.25;
+      }
+      100% {
+        transform: translate(0, -30vh) scale(2);
+        opacity: 0.1;
+      }
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      box-shadow: 0 0 15px crimson;
+      position: relative;
+      z-index: 2;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: crimson;
+    }
+
+    h1, h2 {
+      color: crimson;
+      position: relative;
+      z-index: 2;
+    }
+
+    .intro {
+      margin: 40px auto;
+      max-width: 800px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .demonio {
+      background-color: #181818;
+      border: 2px solid crimson;
+      border-radius: 12px;
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px #8b0000;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .demonio:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px crimson;
+    }
+
+    .demonio img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      padding: 15px;
+      color: #aaa;
+      margin-top: 40px;
+      box-shadow: 0 -5px 15px crimson;
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <!-- 🌫️ HUMO ANIMADO -->
+  <div class="humo">
+    <div style="left:10%; animation-delay:0s;"></div>
+    <div style="left:30%; animation-delay:5s;"></div>
+    <div style="left:50%; animation-delay:10s;"></div>
+    <div style="left:70%; animation-delay:15s;"></div>
+    <div style="left:85%; animation-delay:20s;"></div>
+  </div>
+
+  <header>
+    <h1>Jerarquía Infernal</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="jerarquia.html">Jerarquía Infernal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>Los 20 Demonios Principales del Inframundo</h2>
+    <p>
+      Conoce a las entidades más poderosas del abismo, señores del caos y la sabiduría prohibida.
+      Cada uno guarda secretos antiguos, nombres que resonaron antes que la humanidad misma.
+    </p>
+  </section>
+
+  <section class="galeria">
+    <div class="demonio">
+      <img src="https://www.diziler.com/wp-content/uploads/2024/12/lucifer-iptalden-dondu-lucifer-4-sezon-netflixte-16933-1024x849.jpg" alt="Lucifer">
+      <h3>Lucifer</h3>
+      <p>Portador de la luz caída, soberano del orgullo.</p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://pm1.aminoapps.com/7449/4053a7e5c777f53b650694d962c98bf6472d3d37r1-720-721v2_hq.jpg" alt="Belcebú">
+      <h3>Belcebú</h3>
+      <p>Señor de las moscas, símbolo de la gula y el dominio.</p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFJ3DztkY-uE-Aw7ZKbGcUjKIb3iHAA2Iig&s" alt="Leviatán">
+      <h3>Leviatán</h3>
+      <p>La serpiente marina, guardián de los abismos.</p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://preview.redd.it/how-is-asmodeus-considered-the-weakest-sin-v0-orymbgeamhwe1.jpeg?width=640&crop=smart&auto=webp&s=64f12ab9ded4c08e3bee7aff07469d564bef5754" alt="Asmodeo">
+      <h3>Asmodeo</h3>
+      <p>Príncipe de la lujuria y protector de los deseos carnales.</p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx4kpX6H2cGOpAbp6q5BwCfwAKjvLYznltCA&s" alt="Belial">
+      <h3>Belial</h3>
+      <p>Encarnación de la corrupción y el libre albedrío.</p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://preview.redd.it/astaroth-said-to-be-the-dark-twin-of-demiurge-after-his-v0-ouuthx4nafz81.jpg?auto=webp&s=13877c5a2879b15a6331dfdd583cc8c130e334d5" alt="Astaroth">
+      <h3>Astaroth</h3>
+      <p>Duque del infierno, maestro del conocimiento prohibido.</p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBawNwomI_wxw5Fiv-1ZPxP9D9gd-cBonZFg&s" alt="Mammon">
+      <h3>Mammon</h3>
+      <p>Espíritu de la avaricia y guardián de las riquezas oscuras.</p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1PjW_yeM5v0IoUinbjOqhS6CaVSO4qeg2xg&s" alt="Baal">
+      <h3>Baal</h3>
+      <p>Rey de los infiernos, invocado en antiguas guerras.</p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQGZ9XCJVAQiQQu2UDFB0Aviqhyc2ArB-IIA&s" alt="Lilith">
+      <h3>Lilith</h3>
+      <p>Primera de las oscuras, madre de las sombras nocturnas.</p>
+    </div>
+
+    <div class="demonio">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpfcNweoErteHqYubxbCek-JfdTU-_fJWBw&s" alt="Baphomet">
+      <h3>Baphomet</h3>
+      <p>Equilibrio entre lo divino y lo profano, símbolo de sabiduría.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Enciclopedia Infernal | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
